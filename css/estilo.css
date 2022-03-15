@@ -1,0 +1,586 @@
+* {
+    box-sizing: border-box;
+}
+body {
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Estilo de header */
+header {
+background-color: white;
+padding: 15px;
+text-align: left;
+font-size: 25px;
+color: blue;
+padding-bottom: 30px;
+align-items: center;
+}
+
+/* Crear 2 columnas con la misma posición en la fila */
+nav {
+float: left;
+width: 50%;
+height: 650px;
+/* only for demonstration, should be removed */
+background: white;
+padding: 30px;
+margin-top: 0%;
+}
+
+nav ul {
+list-style-type: disc;
+padding: 30;
+}
+
+article {
+    float: left;
+    padding: 0px;
+    width: 50%;
+    background-color: white;
+    height: 650px;
+    align-items: center;
+    }
+
+
+/* Clear floats after the columns */
+section::after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+
+/* Responsive layout */
+@media (max-width: 600px) {
+
+nav{
+    width: 100%;
+    height: auto;
+}
+}
+
+.div-list{
+    width: 50%;
+    float: left;
+    
+}
+
+div{
+    padding-left: 40px;
+}
+
+.div-float{
+    position: absolute;
+    z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                  valor 1*/
+     margin-left:5%; /*Con este margen posicionamos el div donde queramos*/
+     margin-right: 20%;
+     margin-top: 35%;
+     margin-bottom: 10%;
+     width: 75%;
+     padding-bottom: 20px;
+     background-color: white;
+     border-radius: 5%;
+     box-shadow: 10px 15px 12px 14px rgba(0, 0, 0, 0.1);
+  }
+
+.topic2{
+    position: absolute;
+    z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                  valor 1*/
+     margin-left:0%; /*Con este margen posicionamos el div donde queramos*/
+     margin-top: 8%;
+     padding-left: 0%;
+     margin-bottom: 10%;
+     width: 52%;
+     height: auto;
+     background-color: white;
+}
+.nav-tr-img{
+float: left;
+width: 50%;
+height: 650px;
+/* only for demonstration, should be removed */
+background: white;
+padding: 0px;
+margin-top: 0%;
+}
+
+.triangulo{
+  position: absolute;
+  margin-left: 42%;
+  margin-top: 5%;
+  width: 0;
+  height: 0;
+  border-top: 90px solid transparent;
+  border-right: 105px solid rgba(230, 227, 227, 0.342);
+  border-bottom: 90px solid transparent;
+  padding-left: 0%;
+}
+.triangulo-2 {
+  width: 0;
+  height: 0;
+  border-left: 80px solid transparent;
+  border-right: 80px solid transparent;
+  border-top: 80px solid rgba(230, 227, 227, 0.288);
+  padding-bottom: 0%;
+}
+.triangulo-3 {
+  position: absolute;
+  margin-left: 0%;
+  margin-top: 60%;
+  width: 0;
+  height: 0;
+  border-top: 110px solid transparent;
+  border-left: 105px solid rgba(230, 227, 227, 0.342);
+  border-bottom: 110px solid transparent;
+  float: left;
+}
+.triangulo-4{
+  position: absolute;
+  margin-left: 500px;
+  margin-top: -55px;
+  width: 0;
+  height: 0;
+  border-top: 120px solid transparent;
+  border-right: 105px solid rgba(230, 227, 227, 0.342);
+  border-bottom: 120px solid transparent;
+  padding-left: 0%;
+}
+
+.section-squares{
+  margin-bottom: 200px;
+}
+.cuadros{
+  position: absolute;
+  z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                valor 1*/
+   margin-left:5%; /*Con este margen posicionamos el div donde queramos*/
+   margin-right: 5%;
+   margin-top: 30%;
+   margin-bottom: 10%;
+   width: 90%;
+   height: 340px;
+   background-color: white;
+}
+.cuadro{
+  position: absolute;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: rgba(77, 74, 74, 0.096);
+  margin-top: 10px;
+  width: 240px;
+  height: 300px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+}
+.cuadro1{
+  margin-left: 10px;
+}
+.cuadro2{
+  margin-left: 280px;
+  box-shadow: 1px 18px 14px 4px rgba(42, 44, 94, 0.13);
+}
+.cuadro3{
+  margin-left: 550px;
+}
+.cuadro4{
+  margin-left: 820px;
+}
+h3{
+  color: #445691;
+}
+.little{
+  color: #676b77c5;
+  font-size: 14px;
+  font-weight: 500;
+}
+.more-little{
+  color: #676b77c5;
+  font-size: 12px;
+  font-weight: 500;
+  margin-left: 50px;
+  margin-right: 60px;
+}
+.section-preps{
+  margin-bottom: 250px;
+}
+
+.emergency-contact{
+  margin-bottom: 250px;
+}
+
+.tabla{
+  position: absolute;
+  z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                valor 1*/
+   margin-left: 0px; /*Con este margen posicionamos el div donde queramos*/
+   margin-right: 20px;
+   margin-top: 0%;
+   margin-bottom: 0%;
+   width: 430px;
+   height: 500px;
+   padding: 0%;
+   background-color: white;
+}
+.filas{
+  position: absolute;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: rgba(77, 74, 74, 0.096);
+  margin-left: 0px;
+  width: 430px;
+  height: 70px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.fila1{
+  margin-top: 0px;
+}
+.fila2{
+  margin-top: 85px;
+  height: 140px;
+  box-shadow: 1px 8px 19px 3px rgba(82, 87, 129, 0.1);
+}
+.fila3{
+  margin-top: 240px;
+}
+.fila4{
+  margin-top: 325px;
+}
+.fila5{
+  margin-top: 410px;
+}
+h4{
+  color: #445691;
+}
+img.withText{
+  float: left;
+  padding-top: 20px;
+  border-radius: 10px;
+  width: 30px;
+}
+img.iconDown{
+  float: right;
+  padding-top: 27px;
+  border-radius: 10px;
+  width: 20px;
+}
+
+.boton{
+    background-color: white;
+    border: #f1f1f1;
+    color: #7c8485 ;
+    width: 140px;
+    height: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+}
+
+.boton-azul{
+    background-color: #284EC9;
+    border: #f1f1f1;
+    color: #f1f1f1 ;
+    width: 145px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+.boton-gris{
+  background-color: #caceeb4f;
+  border: #f1f1f1;
+  color: #284EC9 ;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 185px;
+  height: 50px;
+  border-radius: 6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+}
+.boton-azul2{
+  background-color: #284EC9;
+  border: #f1f1f1;
+  color: #f1f1f1 ;
+  margin-left: 30px;
+  margin-top: 30px;
+  width: 185px;
+  height: 50px;
+  border-radius: 6px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  position: relative;
+  box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.titulo{
+    color: #24356e;
+    font-size: 50px;
+    font-style: bold;
+    position: relative;
+    margin-left: 80px;
+    margin-top: 0%;
+}
+
+.titulo2{
+  color: #24356e;
+  font-size: 40px;
+  font-style: bold;
+  position: relative;
+  margin-left: 0px;
+  margin-top: 0%;
+}
+
+.info{
+    color: #68737c;
+    position: relative;
+    margin-left: 80px;
+    margin-right: 100px;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.info2{
+  color: #68737c;
+  position: relative;
+  margin-left: 0px;
+  margin-right: 80px;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    padding-left: 1.3em;
+    list-style: none;
+    color: #24356e;
+    font-weight: 500;
+  }
+  li.star:before {
+    content: "\f005"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    color: #d8c140;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+  }
+  
+  li.shield:before {
+    content: "\f132"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    color: #d8c140;
+    display: inline-block;
+    margin-left: -1.3em;
+    width: 1.3em;
+  }
+  li.clock{
+      font-size: large;
+      font-weight: 700;
+  }
+  li.clock:before {
+    content: "\f017"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    color: #24356e;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1.3em;
+  }
+  label::before{
+    content: "\f017"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    color: #24356e;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1.3em;
+    margin-left: 15px;
+  }
+  label{
+      color: #68737c;
+      font-weight: 500;
+  }
+  .lbl-location::before{
+    content: "\f041"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    color: #24356e;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1.3em;
+    margin-left: 15px;
+  }
+  .lbl-date::before{
+    content: "\f073"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    color: #24356e;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1.3em;
+    margin-left: 15px;
+  }
+  .lbl-vaccine::before{
+    content: "\f1fb"; /* FontAwesome Unicode */
+    font-family: FontAwesome;
+    color: #24356e;
+    display: inline-block;
+    margin-left: -1em;
+    width: 1.3em;
+    margin-left: 15px;
+  }
+  .select-loc{
+      border-color: white;
+      color: #24356e;
+      font-weight: 700;
+  }
+  .select-date{
+    border-color: white;
+    color: #24356e;
+    font-weight: 700;
+}
+.select-vac{
+    border-color: white;
+    color: #24356e;
+    font-weight: 700;
+}
+.submit{
+    background-color: #284EC9;
+    border: #f1f1f1;
+    color: #f1f1f1 ;
+    width: 145px;
+    height: 50px;
+    border-radius: 8px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    box-shadow: 2px 5px 5px 1px rgba(0, 0, 0, 0.2);
+    margin-left: 20px;
+}
+
+.div-img{
+  padding-top: 10px ;
+  align-items: center;
+  vertical-align: middle;
+  padding-left: 100px;
+}
+
+.div-squares{
+  position: absolute;
+  z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                valor 1*/
+  margin-left: 80px; /*Con este margen posicionamos el div donde queramos*/
+  margin-right: 0px;
+  margin-top: 70px;
+  margin-bottom: 0%;
+  width: 540px;
+  height: 480px;
+  padding-left: 0%;
+}
+.squares{
+  position: absolute;
+  border-width: 1.5px;
+  border-style: solid;
+  border-color: rgba(77, 74, 74, 0.096);
+  margin-left: 0px;
+  width: 250px;
+  height: 210px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.square1{
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.square2{
+  margin-left: 290px;
+  margin-top: 0px;
+  box-shadow: 1px 8px 19px 3px rgba(82, 87, 129, 0.1);
+}
+.square3{
+  margin-left: 0px;
+  margin-top: 250px;
+}
+.square4{
+  margin-left: 290px;
+  margin-top: 250px;
+}
+img.squares-icons{
+  float: left;
+  margin-top: 30px;
+  margin-left: 30px;
+  border-radius: 10px;
+  width: 60px;
+}
+h3.contact{
+  margin-left: 110px;
+  margin-top: 30px;
+}
+p.little3{
+  color: #676b77c5;
+  font-size: 14px;
+  font-weight: 500;
+  margin-left: 110px;
+  margin-top: -10px;
+}
+/* Estilo de footer */
+footer {
+  background-color: #7a80d11a;
+  padding: 10px;
+  text-align: left;
+  height: 280px;
+  margin-bottom: 0%;
+}
+.vaccination-foot{
+  position: absolute;
+  z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                valor 1*/
+  margin-left: 80px; /*Con este margen posicionamos el div donde queramos*/
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 300px;
+  height: 240px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+p.little4{
+  color: #676b77c5;
+  font-size: 15px;
+  font-weight: 500;
+  padding-right: 80px;
+}
+p.little5{
+  color: #676b77c5;
+  font-size: 15px;
+  font-weight: 500;
+}
+.about{
+  position: absolute;
+  z-index: 100; /*Crea una capa nueva por encima, si tenemos una con valor 2 estará a una altura o por encima de una con 
+                valor 1*/
+  margin-left: 780px; /*Con este margen posicionamos el div donde queramos*/
+  margin-right: 0px;
+  margin-top: 0px;
+  width: 500px;
+  height: 240px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+tr, td, th{
+  padding-left: 20px;
+  padding-right: 15px;
+}
+td{
+  color: #676b77c5;
+  font-size: 15px;
+  font-weight: 500;
+}
